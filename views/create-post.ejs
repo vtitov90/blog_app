@@ -1,0 +1,15 @@
+<%- include("partials/header.ejs") %>
+<div class="container-create">
+  <div class="form">
+      <form action="/submit-create-post" method="POST">
+          <label for="title" class="form-label">Post title</label>
+          <input type="text" id="title" name="title" class="form-input" placeholder="Enter title of the post">
+          <label for="content" class="form-label">Content</label>
+          <textarea id="content" name="content" class="form-textarea" placeholder="Enter content of the post"></textarea>
+          <label for="image" class="form-label">Add image</label>
+          <input type="file" id="image" name="image" class="form-input">
+          <input type="submit" value="Create post" class="form-button">
+      </form>
+  </div>
+</div>
+<%- include("partials/footer.ejs") %>

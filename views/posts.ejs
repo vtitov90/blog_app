@@ -1,0 +1,28 @@
+<%- include("partials/header.ejs") %>
+
+<div class="container-content">
+  <% posts.forEach(post => { %>
+  <div class="post">
+    <form action="/delete-post/<%= post.id %>" method="post">
+      <button class="delete-button">Delete</button>
+    </form>
+    <form action="/edit-post/<%= post.id %>" method="post">
+      <button class="edit-button">Edit</button>
+    </form>
+
+    <h2 class="post-title"><%= post.title%></h2>
+    <% if(post.image) {%>
+    <img
+      class="post-img"
+      src="https://picsum.photos/760?random=$<%=post.id%>"
+      alt="<%= post.title%>"
+    />
+    <% } %>
+    <p class="post-content"><%= post.content%></p>
+    <p class="post-date"><%= post.date%></p>
+    <a href="#" class="read-more">Read more</a>
+  </div>
+  <% }) %>
+</div>
+
+<%- include("partials/footer.ejs") %>

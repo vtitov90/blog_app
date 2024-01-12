@@ -1,0 +1,77 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.container-content {
+  width: 800px;
+  margin: 0 auto;
+}
+
+.post {
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin-bottom: 20px;
+  background-color: #fff;
+  position: relative; 
+}
+.post-title {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 10px;
+}
+.post-content {
+  font-size: 18px;
+  color: #666;
+  line-height: 1.5;
+}
+.post-date {
+  font-size: 14px;
+  color: #999;
+  margin-top: 10px;
+}
+.read-more {
+  display: inline-block;
+  font-size: 16px;
+  color: #fff;
+  background-color: #116BF3; 
+  padding: 10px 20px;
+  margin-top: 10px;
+  text-decoration: none;
+}
+.delete-button, .edit-button {
+  display: inline-block;
+  font-size: 14px;
+  color: #fff;
+  padding: 5px 10px;
+  text-decoration: none;
+  position: absolute; 
+  top: 10px; 
+}
+.delete-button {
+  background-color: #f44336; 
+  right: 10px; 
+  border: none;
+}
+.edit-button {
+  background-color: #116BF3; 
+  right: 80px; 
+  border: none;
+}
+.footer {
+  background-color: #116BF3; 
+  padding: 20px;
+  text-align: center;
+}
+.footer-text {
+  font-size: 18px;
+  color: #fff;
+}
+
+.post-img {
+  width: 100%;
+}
