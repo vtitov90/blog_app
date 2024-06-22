@@ -139,7 +139,7 @@ const findPost = function (id, toDelete = false) {
   return posts[index];
 };
 
-app.get("/delete-post/:postId", (req, res) => {
+app.post("/delete-post/:postId", (req, res) => {
   const postIdToDelete = req.params.postId;
   findPost(+postIdToDelete, true);
   res.redirect("/posts");
